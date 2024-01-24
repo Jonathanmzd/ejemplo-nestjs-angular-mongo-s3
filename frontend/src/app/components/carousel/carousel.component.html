@@ -1,0 +1,13 @@
+<p-carousel [value]="images" [circular]="isSlider()" [autoplayInterval]="duration">
+  <ng-template let-image pTemplate="image">
+    <div [id]="id" class="relative h-56 overflow-hidden rounded-lg bg-cover">
+      <img
+        class="absolute h-full w-full block -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 "
+        [ngSrc]="image"
+        [alt]="image"
+        width="348"
+        height="224"
+      />
+    </div>
+  </ng-template>
+</p-carousel>
